@@ -97,12 +97,19 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+#ifdef DEBUG
+  uint32_t id = 0;
+  sFLASH_Init();
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  HAL_Delay(1000);
+	  id=sFLASH_ReadID();
+	  printf("Hello: %ld\n",id);
     /* USER CODE BEGIN 3 */
   }
+#endif
   /* USER CODE END 3 */
 }
 
@@ -169,6 +176,10 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
+int __io_putchar(int ch){
+    ITM_SendChar(ch);
+    return 0;
+}
 /* USER CODE END 4 */
 
 /**
@@ -179,6 +190,7 @@ void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
+	printf("in error handler\n");
 
   /* USER CODE END Error_Handler_Debug */
 }
