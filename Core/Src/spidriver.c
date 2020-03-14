@@ -4,7 +4,27 @@
 
 extern QSPI_HandleTypeDef hqspi;
 
-static void QSPI_WriteEnable(QSPI_HandleTypeDef *hqspi) {
+
+static void QSPI_QuadEnable(QSPI_HandleTypeDef *hqspi){
+	QSPI_CommandTypeDef sCommand;
+	sCommand.InstructionMode = QSPI_INSTRUCTION_1_LINE;
+	sCommand.Instruction = ENTER_QUAD_CMD;
+	sCommand.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+	sCommand.AddressMode = QSPI_ADDRESS_NONE;
+	sCommand.DummyCycles = 0;
+	sCommand.DataMode = QSPI_DATA_NONE;
+	sCommand.DdrMode = QSPI_DDR_MODE_DISABLE;
+	sCommand.DdrHoldHalfCycle = QSPI_DDR_HHC_ANALOG_DELAY;
+	sCommand.SIOOMode = QSPI_SIOO_INST_EVERY_CMD;
+	if (HAL_QSPI_Command(hqspi, &sCommand, HAL_QPSI_TIMEOUT_DEFAULT_VALUE)
+			!= HAL_OK) {
+		Error_Handler();
+	}
+	QSPI_AutoPollingMemReady(&hqspi);
+}
+
+
+void QSPI_WriteEnable(QSPI_HandleTypeDef *hqspi) {
 	QSPI_CommandTypeDef sCommand;
 	QSPI_AutoPollingTypeDef sConfig;
 
@@ -39,7 +59,7 @@ static void QSPI_WriteEnable(QSPI_HandleTypeDef *hqspi) {
 	}
 }
 
-static void QSPI_AutoPollingMemReady(QSPI_HandleTypeDef *hqspi) {
+void QSPI_AutoPollingMemReady(QSPI_HandleTypeDef *hqspi) {
 	QSPI_CommandTypeDef sCommand;
 	QSPI_AutoPollingTypeDef sConfig;
 
@@ -47,6 +67,7 @@ static void QSPI_AutoPollingMemReady(QSPI_HandleTypeDef *hqspi) {
 	sCommand.Instruction = READ_STATUS_REG_CMD;
 	sCommand.AddressMode = QSPI_ADDRESS_NONE;
 	sCommand.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
+//	sCommand.DataMode = QSPI_DATA_4_LINES;
 	sCommand.DataMode = QSPI_DATA_1_LINE;
 	sCommand.DummyCycles = 0;
 	sCommand.DdrMode = QSPI_DDR_MODE_DISABLE;
@@ -82,17 +103,21 @@ void sFLASH_DeInit(void) {
 void sFLASH_Init(void) {
 	QSPI_WriteEnable(&hqspi);
 	QSPI_AutoPollingMemReady(&hqspi);
+	// It just does not work
+	// hard to debug and not mandatory function
+	// let it go
+	//	QSPI_QuadEnable(&hqspi);
 }
 
 void sFLASH_EraseSector(uint32_t SectorAddr) {
 	QSPI_CommandTypeDef sCommand;
 	initCommonCmd(&sCommand);
 	sCommand.Instruction = SECTOR_ERASE_CMD;
-	sCommand.AddressMode = QSPI_ADDRESS_4_LINES;
+	sCommand.AddressMode = QSPI_ADDRESS_1_LINE;
 	sCommand.Address = SectorAddr;
 	sCommand.DataMode = QSPI_DATA_NONE;
 	sCommand.DummyCycles = 0;
-	if (HAL_QSPI_Command_IT(&hqspi, &sCommand) != HAL_OK) {
+	if (HAL_QSPI_Command(&hqspi, &sCommand,1000) != HAL_OK) {
 		Error_Handler();
 	}
 	QSPI_AutoPollingMemReady(&hqspi);
@@ -132,15 +157,15 @@ void sFLASH_WriteBuffer(uint8_t *pBuffer, uint32_t WriteAddr,
 	QSPI_CommandTypeDef sCommand;
 	initCommonCmd(&sCommand);
 	sCommand.Instruction = PAGE_PROG_CMD;
-	sCommand.AddressMode = QSPI_ADDRESS_4_LINES;
+	sCommand.AddressMode = QSPI_ADDRESS_1_LINE;
 	sCommand.Address = WriteAddr;
-	sCommand.DataMode = QSPI_DATA_4_LINES;
+	sCommand.DataMode = QSPI_DATA_1_LINE;
 	sCommand.NbData = NumByteToWrite;
 	sCommand.DummyCycles = 0;
-	if (HAL_QSPI_Command_IT(&hqspi, &sCommand) != HAL_OK) {
+	if (HAL_QSPI_Command(&hqspi, &sCommand,1000) != HAL_OK) {
 		Error_Handler();
 	}
-	HAL_QSPI_Transmit_IT(&hqspi, pBuffer);
+	HAL_QSPI_Transmit(&hqspi, pBuffer,1000);
 	QSPI_AutoPollingMemReady(&hqspi);
 }
 
@@ -149,15 +174,15 @@ void sFLASH_ReadBuffer(uint8_t *pBuffer, uint32_t ReadAddr,
 	QSPI_CommandTypeDef sCommand;
 	initCommonCmd(&sCommand);
 	sCommand.Instruction = READ_CMD;
-	sCommand.AddressMode = QSPI_ADDRESS_4_LINES;
+	sCommand.AddressMode = QSPI_ADDRESS_1_LINE;
 	sCommand.Address = ReadAddr;
-	sCommand.DataMode = QSPI_DATA_4_LINES;
+	sCommand.DataMode = QSPI_DATA_1_LINE;
 	sCommand.NbData = NumByteToRead;
 	sCommand.DummyCycles = 0;
-	if (HAL_QSPI_Command_IT(&hqspi, &sCommand) != HAL_OK) {
+	if (HAL_QSPI_Command(&hqspi, &sCommand,1000) != HAL_OK) {
 		Error_Handler();
 	}
-	HAL_QSPI_Receive_IT(&hqspi, pBuffer);
+	HAL_QSPI_Receive(&hqspi, pBuffer,1000);
 	QSPI_AutoPollingMemReady(&hqspi);
 }
 

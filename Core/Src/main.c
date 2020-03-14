@@ -93,20 +93,35 @@ int main(void)
 
   /* USER CODE END 2 */
  
- 
+
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
 #ifdef DEBUG
   uint32_t id = 0;
+  uint8_t bufW[4]={123,213,123,213};
+  uint8_t bufR[4];
   sFLASH_Init();
   while (1)
   {
     /* USER CODE END WHILE */
 	  HAL_Delay(1000);
 	  id=sFLASH_ReadID();
-	  printf("Hello: %ld\n",id);
+	  printf("expected ID:\t %ld\nreaded ID:\t %ld\n",0x9d6019,id);
+
+	  sFLASH_EraseSector(0x0);
+	  //the Write Enable Latch (WEL) must be set via a Write Enable (WREN) instruction.
+	  //The WEL is reset automatically after the completion of a block erase operation
+	  QSPI_WriteEnable(&hqspi);
+	  sFLASH_WriteBuffer(bufW, 0x0, 4);
+	  sFLASH_ReadBuffer(bufR, 0x0, 4);
+
+	  printf("readed bytes:\n");
+	  for(int i=0;i<4;i++){
+		  printf("0x%x: %d\n",i,bufR[i]);
+	  }
+
     /* USER CODE BEGIN 3 */
   }
 #endif
