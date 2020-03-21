@@ -1,0 +1,7 @@
+loader.c:20:5:Init	8	static
+loader.c:40:5:Read	32	static
+loader.c:62:5:Write	48	static
+loader.c:159:5:MassErase	8	static
+loader.c:177:5:SectorErase	24	static
+loader.c:205:10:CheckSum	40	static
+loader.c:296:10:Verify	56	static

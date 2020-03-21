@@ -1,0 +1,808 @@
+271^done
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+272^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+273^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+274^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+275^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+276^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+277^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+278^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+279^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+280^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+281^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+282^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined set mem command: \"-- Memory regions settings\".  Try \"help set mem\".\n"
+283^error,msg="Undefined set mem command: \"-- Memory regions settings\".  Try \"help set mem\"."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+284^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+285^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined item: \"-- Set the debugger behavior when more than one symbol are possible matches\".\n"
+286^error,msg="Undefined item: \"-- Set the debugger behavior when more than one symbol are possible matches\"."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+287^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+288^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+289^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined item: \"-- Set OS ABI of target\".\n"
+290^error,msg="Undefined item: \"-- Set OS ABI of target\"."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+291^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+292^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+293^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined set print command: \"-- Generic command for setting how things print\".  Try \"help set print\".\n"
+294^error,msg="Undefined set print command: \"-- Generic command for setting how things print\".  Try \"help set print\"."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+295^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+296^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+297^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+298^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+299^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+300^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"Undefined item: \"-- Set printing of function arguments at function entry\".\n"
+301^error,msg="Undefined item: \"-- Set printing of function arguments at function entry\"."
+(gdb) 
+&"Undefined item: \"-- Set printing of non-scalar frame arguments\".\n"
+302^error,msg="Undefined item: \"-- Set printing of non-scalar frame arguments\"."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+303^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+304^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+305^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+306^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+307^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+308^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined set print raw command: \"-- Generic command for setting what things to print in \"raw\" mode\".  Try \"help set print raw\".\n"
+309^error,msg="Undefined set print raw command: \"-- Generic command for setting what things to print in \"raw\" mode\".  Try \"help set print raw\"."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+310^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+311^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+312^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+313^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+314^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+315^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined item: \"-- Set printing of symbol loading messages\".\n"
+316^error,msg="Undefined item: \"-- Set printing of symbol loading messages\"."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+317^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined show print type command: \"-- Generic command for setting how types print\".  Try \"help show print type\".\n"
+318^error,msg="Undefined show print type command: \"-- Generic command for setting how types print\".  Try \"help show print type\"."
+(gdb) 
+~"Printing of methods defined in a class in on\n"
+319^done
+(gdb) 
+~"Will not print nested types defined in a class\n"
+320^done
+(gdb) 
+~"Printing of typedefs defined in a class in on\n"
+321^done
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+322^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+323^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+=cmd-param-changed,param="prompt",value="-- Set gdb's prompt"
+324^done
+(gdb) 
+&"Undefined set python command: \"-- Prefix command for python preference settings\".  Try \"help set python\".\n"
+325^error,msg="Undefined set python command: \"-- Prefix command for python preference settings\".  Try \"help set python\"."
+(gdb) 
+&"Undefined item: \"-- Set mode for Python stack dump on error\".\n"
+326^error,msg="Undefined item: \"-- Set mode for Python stack dump on error\"."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+327^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+328^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined set record command: \"-- Set record options\".  Try \"help set record\".\n"
+329^error,msg="Undefined set record command: \"-- Set record options\".  Try \"help set record\"."
+(gdb) 
+&"Undefined set record btrace command: \"-- Set record options\".  Try \"help set record btrace\".\n"
+330^error,msg="Undefined set record btrace command: \"-- Set record options\".  Try \"help set record btrace\"."
+(gdb) 
+&"Undefined set record btrace bts command: \"-- Set record btrace bts options\".  Try \"help set record btrace bts\".\n"
+331^error,msg="Undefined set record btrace bts command: \"-- Set record btrace bts options\".  Try \"help set record btrace bts\"."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+332^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"Undefined set record btrace pt command: \"-- Set record btrace pt options\".  Try \"help set record btrace pt\".\n"
+333^error,msg="Undefined set record btrace pt command: \"-- Set record btrace pt options\".  Try \"help set record btrace pt\"."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+334^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"Undefined item: \"-- Set what memory accesses are allowed during replay\".\n"
+335^error,msg="Undefined item: \"-- Set what memory accesses are allowed during replay\"."
+(gdb) 
+&"Undefined set record full command: \"-- Set record options\".  Try \"help set record full\".\n"
+336^error,msg="Undefined set record full command: \"-- Set record options\".  Try \"help set record full\"."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+337^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+338^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+339^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+340^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+341^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"Undefined set remote command: \"-- Remote protocol specific variables\".  Try \"help set remote\".\n"
+342^error,msg="Undefined set remote command: \"-- Remote protocol specific variables\".  Try \"help set remote\"."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+343^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+344^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+345^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+346^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+347^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+348^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+349^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+350^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+351^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+352^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+353^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+354^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+355^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+356^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+357^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+358^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+359^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+360^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+361^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+362^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+363^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+364^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+365^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+366^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+=cmd-param-changed,param="remote exec-file",value="-- Set the remote pathname for \"run\""
+367^done
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+368^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+369^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+370^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+371^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+372^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+373^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+374^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+375^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+376^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+377^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+378^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+379^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+380^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+381^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+382^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+383^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+384^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+385^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+386^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+387^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined item: \"-- Set interrupt sequence to remote target\".\n"
+388^error,msg="Undefined item: \"-- Set interrupt sequence to remote target\"."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+389^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+390^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+391^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+392^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"Invalid memory-read-packet-size (bad syntax).\n"
+393^error,msg="Invalid memory-read-packet-size (bad syntax)."
+(gdb) 
+&"Invalid memory-write-packet-size (bad syntax).\n"
+394^error,msg="Invalid memory-write-packet-size (bad syntax)."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+395^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+396^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+397^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+398^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+399^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+400^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+401^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+402^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+403^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+404^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+405^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+406^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+407^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+408^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+409^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+410^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+411^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+412^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+413^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+414^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+415^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+416^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+417^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+418^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+419^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+420^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+421^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+422^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+423^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"Illegal argument for \"set remote system-call-allowed\" command\n"
+424^error,msg="Illegal argument for \"set remote system-call-allowed\" command"
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+425^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+426^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+427^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+428^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+429^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+430^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+431^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+432^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+433^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+434^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+435^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+436^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"\"on\", \"off\" or \"auto\" expected.\n"
+437^error,msg="\"on\", \"off\" or \"auto\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+438^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+439^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+440^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined item: \"-- Set numerical base for remote session logging\".\n"
+441^error,msg="Undefined item: \"-- Set numerical base for remote session logging\"."
+(gdb) 
+=cmd-param-changed,param="remotelogfile",value="-- Set filename for remote session recording"
+442^done
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+443^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"Invalid memory-write-packet-size (bad syntax).\n"
+444^error,msg="Invalid memory-write-packet-size (bad syntax)."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+445^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined item: \"-- Set mode for locking scheduler during execution\".\n"
+446^error,msg="Undefined item: \"-- Set mode for locking scheduler during execution\"."
+(gdb) 
+&"Undefined item: \"-- Set mode for script filename extension recognition\".\n"
+447^error,msg="Undefined item: \"-- Set mode for script filename extension recognition\"."
+(gdb) 
+&"Undefined set serial command: \"-- Set default serial/parallel port configuration\".  Try \"help set serial\".\n"
+448^error,msg="Undefined set serial command: \"-- Set default serial/parallel port configuration\".  Try \"help set serial\"."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+449^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"Undefined item: \"-- Set parity for remote serial I/O\".\n"
+450^error,msg="Undefined item: \"-- Set parity for remote serial I/O\"."
+(gdb) 
+=cmd-param-changed,param="sysroot",value="-- Set an alternate system root"
+451^done
+(gdb) 
+=cmd-param-changed,param="solib-search-path",value="-- Set the search path for loading non-absolute shared library symbol files"
+452^done
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+453^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+454^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+455^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"Incorrect usage, too many arguments in command\n"
+456^error,msg="Incorrect usage, too many arguments in command"
+(gdb) 
+457^done
+(gdb) 
+&"Undefined item: \"-- Set the target character set\".\n"
+458^error,msg="Undefined item: \"-- Set the target character set\"."
+(gdb) 
+&"Undefined item: \"-- Set assumed file system kind for target reported file names\".\n"
+459^error,msg="Undefined item: \"-- Set assumed file system kind for target reported file names\"."
+(gdb) 
+&"Undefined item: \"-- Set the target wide character set\".\n"
+460^error,msg="Undefined item: \"-- Set the target wide character set\"."
+(gdb) 
+&"Undefined set tcp command: \"-- TCP protocol specific variables\".  Try \"help set tcp\".\n"
+461^error,msg="Undefined set tcp command: \"-- TCP protocol specific variables\".  Try \"help set tcp\"."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+462^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+463^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"Undefined set tdesc command: \"-- Set target description specific variables\".  Try \"help set tdesc\".\n"
+464^error,msg="Undefined set tdesc command: \"-- Set target description specific variables\".  Try \"help set tdesc\"."
+(gdb) 
+&"warning: Could not open \"-- Set the file to read for an XML target description\"\n"
+465^done
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+466^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+467^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"warning: Target does not support trace notes, note ignored\n"
+=cmd-param-changed,param="trace-notes",value="-- Set notes string to use for current and future trace runs"
+468^done
+(gdb) 
+&"warning: Target does not support trace notes, stop note ignored\n"
+=cmd-param-changed,param="trace-stop-notes",value="-- Set notes string to use for future tstop commands"
+469^done
+(gdb) 
+&"warning: Target does not support trace notes, user ignored\n"
+=cmd-param-changed,param="trace-user",value="-- Set the user name to use for current and future trace runs"
+470^done
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+471^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"Undefined set tui command: \"-- TUI configuration variables\".  Try \"help set tui\".\n"
+472^error,msg="Undefined set tui command: \"-- TUI configuration variables\".  Try \"help set tui\"."
+(gdb) 
+&"Undefined item: \"-- Set the attribute mode to use for the active TUI window border\".\n"
+473^error,msg="Undefined item: \"-- Set the attribute mode to use for the active TUI window border\"."
+(gdb) 
+&"Undefined item: \"-- Set the kind of border for TUI windows\".\n"
+474^error,msg="Undefined item: \"-- Set the kind of border for TUI windows\"."
+(gdb) 
+&"Undefined item: \"-- Set the attribute mode to use for the TUI window borders\".\n"
+475^error,msg="Undefined item: \"-- Set the attribute mode to use for the TUI window borders\"."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+476^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+477^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+478^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"No symbol \"Evaluate\" in current context.\n"
+479^error,msg="No symbol \"Evaluate\" in current context."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+480^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+481^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"No symbol \"Set\" in current context.\n"
+482^error,msg="No symbol \"Set\" in current context."
+(gdb) 
+&"\"on\" or \"off\" expected.\n"
+483^error,msg="\"on\" or \"off\" expected."
+(gdb) 
+&"negative value\n"
+484^error,msg="negative value"
+(gdb) 
+&"No symbol \"Print\" in current context.\n"
+485^error,msg="No symbol \"Print\" in current context."
+(gdb) 
+&"No symbol \"Examine\" in current context.\n"
+486^error,msg="No symbol \"Examine\" in current context."
+(gdb) 
+487^error,msg="-interpreter-exec: Usage: -interpreter-exec interp command"
+(gdb) 
+&"Undefined command: \"Command\".  Try \"help\".\n"
+488^error,msg="Undefined command: \"Command\".  Try \"help\"."
+(gdb) 
+489^error,msg="-interpreter-exec: Usage: -interpreter-exec interp command"
+(gdb) 
+&"Unrecognized argument \"from\"\n"
+490^error,msg="Unrecognized argument \"from\""
+(gdb) 
+&"-- Set working directory to DIR for debugger: No such file or directory.\n"
+491^error,msg="-- Set working directory to DIR for debugger: No such file or directory."
+(gdb) 
+~"A program is being debugged already.  Kill it? (y or n) [answered Y; input not from terminal]\n"
+=thread-group-exited,id="i1"
+&"/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/-- Use FILE as core dump for examining memory and registers: No such file or directory.\n"
+492^error,msg="/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/-- Use FILE as core dump for examining memory and registers: No such file or directory."
+(gdb) 
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/--: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/Add: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/directory: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/DIR: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/to: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/beginning: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/of: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/search: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/path: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/for: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/source: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/files: No such file or directory.\n"
+~"Source directories searched: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/--:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/Add:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/directory:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/DIR:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/to:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/beginning:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/of:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/search:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/path:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/for:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/source:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/files:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/Set:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/the:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/finding:$cdir:$cwd\n"
+493^done
+(gdb) 
+&"Function \"-- Edit specified file or function\" not defined.\n"
+494^error,msg="Function \"-- Edit specified file or function\" not defined."
+(gdb) 
+&"Use: No such file or directory.\n"
+495^error,msg="Use: No such file or directory."
+(gdb) 
+&"Use: No such file or directory.\n"
+496^error,msg="Use: No such file or directory."
+(gdb) 
+~"Expression not found\n"
+497^done
+(gdb) 
+&"You can't do that without a process to debug.\n"
+498^error,msg="You can't do that without a process to debug."
+(gdb) 
+&"Function \"-- List specified function or line\" not defined.\n"
+499^error,msg="Function \"-- List specified function or line\" not defined."
+(gdb) 
+&"You can't do that when your target is `None'\n"
+500^error,msg="You can't do that when your target is `None'"
+(gdb) 
+501^done
+(gdb) 
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/--: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/Add: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/directory: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/DIR(s): No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/to: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/beginning: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/of: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/search: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/path: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/for: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/object: No such file or directory.\n"
+&"Warning: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/files: No such file or directory.\n"
+~"Executable and object file path: /Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/--:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/Add:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/directory:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/DIR(s):/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/to:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/beginning:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/of:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/search:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/path:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/for:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/object:/Users/liuhancheng/STM32CubeIDE/stm32ws/h750vb_core_stldr/files:/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin:/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.make.macos64_1.1.0.201910081157/tools/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin\n"
+502^done
+(gdb) 
+&"The \"pwd\" command does not take an argument: -- Print working directory\n"
+503^error,msg="The \"pwd\" command does not take an argument: -- Print working directory"
+(gdb) 
+&"Undefined remote command: \"-- Manipulate files on the remote system\".  Try \"help remote\".\n"
+504^error,msg="Undefined remote command: \"-- Manipulate files on the remote system\".  Try \"help remote\"."
+(gdb) 
+&"Invalid parameters to remote delete\n"
+505^error,msg="Invalid parameters to remote delete"
+(gdb) 
+&"Invalid parameters to remote get\n"
+506^error,msg="Invalid parameters to remote get"
+(gdb) 
+&"Invalid parameters to remote put\n"
+507^error,msg="Invalid parameters to remote put"
+(gdb) 
+&"Junk after --\n"
+508^error,msg="Junk after --"
+(gdb) 
+&"Expression not found\n"
+509^error,msg="Expression not found"
+(gdb) 
+~"Expression not found\n"
+510^done
+(gdb) 
+&"No symbol \"Change\" in current context.\n"
+511^error,msg="No symbol \"Change\" in current context."
+(gdb) 
+~"No loaded shared libraries match the pattern `-- Load shared object library symbols for files matching REGEXP'.\n"
+512^done
+(gdb) 
+&"Unrecognized argument \"symbol\"\n"
+513^error,msg="Unrecognized argument \"symbol\""
+(gdb) 
+514^error,msg="-interpreter-exec: Usage: -interpreter-exec interp command"
+(gdb) 
+&"Undefined command: \"Command\".  Try \"help\".\n"
+515^error,msg="Undefined command: \"Command\".  Try \"help\"."
+(gdb) 
+516^error,msg="-interpreter-exec: Usage: -interpreter-exec interp command"
+(gdb) 
+~"Register cache flushed.\n"
+517^done
+(gdb) 
+&"Undefined maintenance command: \"-- Commands for use by GDB maintainers\".  Try \"help maintenance\".\n"
+518^error,msg="Undefined maintenance command: \"-- Commands for use by GDB maintainers\".  Try \"help maintenance\"."
+(gdb) 
+&"No registers.\n"
+519^error,msg="No registers."
+(gdb) 
+&"No registers.\n"
+520^error,msg="No registers."
+(gdb) 
+&"No registers.\n"
+521^error,msg="No registers."
+(gdb) 
+&"Undefined maintenance btrace command: \"-- Branch tracing maintenance commands\".  Try \"help maintenance btrace\".\n"
+522^error,msg="Undefined maintenance btrace command: \"-- Branch tracing maintenance commands\".  Try \"help maintenance btrace\"."
+(gdb) 
+&"Invalid argument.\n"
+523^error,msg="Invalid argument."
+(gdb) 
+&"Invalid argument.\n"
+524^error,msg="Invalid argument."
+(gdb) 
+&"No thread.\n"
+525^error,msg="No thread."
+(gdb) 
+&"Undefined maintenance check command: \"-- Commands for checking internal gdb state\".  Try \"help maintenance check\".\n"
+526^error,msg="Undefined maintenance check command: \"-- Commands for checking internal gdb state\".  Try \"help maintenance check\"."
+(gdb) 
+~"Tested 0 XML files, 0 failed\n"
+527^done
+(gdb) 
+528^done
+(gdb) 
+529^done
+(gdb) 
+&"Undefined maintenance cplus command: \"-- C++ maintenance commands\".  Try \"help maintenance cplus\".\n"
+530^error,msg="Undefined maintenance cplus command: \"-- C++ maintenance commands\".  Try \"help maintenance cplus\"."
+(gdb) 
+~"-- Print the first class/namespace component of NAME\n"
+531^done
+(gdb) 
+~"/build/gnu-tools-for-stm32_7-2018-q2-update.20190328-1800/src/gdb/gdb/maint.c:119: demangler-warning: -- Give GDB a demangler warning\nA problem internal to GDB has been detected,\nfurther debugging may prove unreliable.\nQuit this debugging session? "
+~"(y or n) [answered Y; input not from terminal]\n"
+&"\nThis is a bug, please report it."
+&"  For instructions, see:\n<http://www.gnu.org/software/gdb/bugs/>."
+&"\n\n"

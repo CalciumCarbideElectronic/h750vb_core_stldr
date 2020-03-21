@@ -19,7 +19,7 @@
   */
 int Init (void)
 {
-  SystemInit();
+  main();
   sFLASH_Init();
   return 1;
 }
@@ -39,8 +39,11 @@ int Init (void)
   */
 int Read (uint32_t Address, uint32_t Size, uint8_t* buffer)
 {
-  sFLASH_ReadBuffer(buffer, Address, Size);
-  return 1;
+	sFLASH_MemoryMapped();
+	for (int i=0;i<Size;i++){
+		buffer[i] = *(uint8_t *) Address;
+	}
+    return 1;
 }
 
 
@@ -58,7 +61,87 @@ int Read (uint32_t Address, uint32_t Size, uint8_t* buffer)
   */
 int Write (uint32_t Address, uint32_t Size, uint8_t* buffer)
 {
-  sFLASH_WriteBuffer(buffer, Address, Size);
+//	return 1;
+  uint32_t NumOfPage = 0, NumOfSingle = 0, Addr = 0, count = 0, temp = 0;
+  uint32_t   QSPI_DataNum = 0;
+
+  Addr = Address % QSPI_PAGESIZE;
+  count = QSPI_PAGESIZE - Addr;
+  NumOfPage =  Size / QSPI_PAGESIZE;
+  NumOfSingle = Size % QSPI_PAGESIZE;
+
+  if (Addr == 0) /*!< Address is QSPI_PAGESIZE aligned  */
+  {
+    if (NumOfPage == 0) /*!< NumByteToWrite < QSPI_PAGESIZE */
+    {
+      QSPI_DataNum = Size;
+      sFLASH_WriteBuffer(Address, QSPI_DataNum, buffer);
+    }
+    else /*!< Size > QSPI_PAGESIZE */
+    {
+      while (NumOfPage--)
+      {
+        QSPI_DataNum = QSPI_PAGESIZE;
+        sFLASH_WriteBuffer(Address, QSPI_DataNum, buffer);
+        Address +=  QSPI_PAGESIZE;
+        buffer += QSPI_PAGESIZE;
+      }
+
+      QSPI_DataNum = NumOfSingle;
+      sFLASH_WriteBuffer(Address, QSPI_DataNum, buffer);
+    }
+  }
+  else /*!< Address is not QSPI_PAGESIZE aligned  */
+  {
+    if (NumOfPage == 0) /*!< Size < QSPI_PAGESIZE */
+    {
+      if (NumOfSingle > count) /*!< (Size + Address) > QSPI_PAGESIZE */
+      {
+        temp = NumOfSingle - count;
+        QSPI_DataNum = count;
+        sFLASH_WriteBuffer(Address, QSPI_DataNum, buffer);
+        Address +=  count;
+        buffer += count;
+
+        QSPI_DataNum = temp;
+        sFLASH_WriteBuffer(Address, QSPI_DataNum, buffer);
+      }
+      else
+      {
+        QSPI_DataNum = Size;
+        sFLASH_WriteBuffer(Address, QSPI_DataNum, buffer);
+      }
+    }
+    else /*!< Size > QSPI_PAGESIZE */
+    {
+      Size -= count;
+      NumOfPage =  Size / QSPI_PAGESIZE;
+      NumOfSingle = Size % QSPI_PAGESIZE;
+
+      QSPI_DataNum = count;
+
+      sFLASH_WriteBuffer(Address, QSPI_DataNum, buffer);
+      Address +=  count;
+      buffer += count;
+
+      while (NumOfPage--)
+      {
+        QSPI_DataNum = QSPI_PAGESIZE;
+
+        sFLASH_WriteBuffer(Address, QSPI_DataNum, buffer);
+        Address +=  QSPI_PAGESIZE;
+        buffer += QSPI_PAGESIZE;
+      }
+
+      if (NumOfSingle != 0)
+      {
+        QSPI_DataNum = NumOfSingle;
+
+        sFLASH_WriteBuffer(Address, QSPI_DataNum, buffer);
+      }
+    }
+  }
+
   return 1;
 }
 
@@ -93,14 +176,20 @@ int MassErase (void)
   */
 int SectorErase (uint32_t EraseStartAddress ,uint32_t EraseEndAddress)
 {
-  EraseStartAddress = EraseStartAddress -  EraseStartAddress%0x10000;
-  while (EraseEndAddress>=EraseStartAddress)
-  {
-    sFLASH_EraseSector(EraseStartAddress);
+
+	uint32_t BlockAddr;
+	EraseStartAddress = EraseStartAddress -  EraseStartAddress % 0x10000;
+
+	while (EraseEndAddress>=EraseStartAddress)
+	{
+		BlockAddr = EraseStartAddress & 0x0FFFFFFF;
+		sFLASH_EraseSector( BlockAddr);
     EraseStartAddress += 0x10000;
-  }
-  return 1;
+	}
+ 	return 1;
+
 }
+
 
 /**
   * Description :

@@ -14,6 +14,7 @@
 #define sFLASH_CMD_RDUID 0x4B
 
 
+#define QSPI_PAGESIZE 0xFF
 
 #define sFLASH_CMD_WRITE          0x02
 #define sFLASH_CMD_WRSR           0x01
@@ -35,16 +36,25 @@ void sFLASH_Init(void);
 void sFLASH_EraseSector(uint32_t SectorAddr);
 void sFLASH_EraseBulk(void);
 void sFLASH_WritePage(uint8_t* pBuffer, uint32_t WriteAddr, uint32_t NumByteToWrite);
-void sFLASH_WriteBuffer(uint8_t* pBuffer, uint32_t WriteAddr, uint32_t NumByteToWrite);
+int sFLASH_WriteBuffer(
+		uint32_t WriteAddr,
+		uint32_t NumByteToWrite,
+		uint8_t* pBuffer
+		);
 void sFLASH_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumByteToRead);
 
+
+uint8_t sFLASH_ReadReg1(uint8_t ins);
 uint32_t sFLASH_ReadID(void);
 void sFLASH_StartReadSequence(uint32_t ReadAddr);
 uint8_t sFLASH_ReadByte(void);
 uint8_t sFLASH_SendByte(uint8_t byte);
 uint16_t sFLASH_SendHalfWord(uint16_t HalfWord);
+void QSPI_WriteEnable(QSPI_HandleTypeDef *hqspi);
 void sFLASH_WriteEnable(void);
 void sFLASH_WaitForWriteEnd(void);
+void sFLASH_MemoryMapped();
+void sFLASH_Reset(void);
 
 /* Reset Operations */
 #define RESET_ENABLE_CMD                     0x66
@@ -56,6 +66,7 @@ void sFLASH_WaitForWriteEnd(void);
 #define MULTIPLE_IO_READ_ID_CMD              0xAF
 #define READ_SERIAL_FLASH_DISCO_PARAM_CMD    0x5A
 
+#define REG_BANK_ADDRESS_READ                             0x16
 /* Read Operations */
 #define READ_CMD                             0x03
 #define READ_4_BYTE_ADDR_CMD                 0x13
@@ -137,9 +148,26 @@ void sFLASH_WaitForWriteEnd(void);
 #define ENTER_4_BYTE_ADDR_MODE_CMD           0xB7
 #define EXIT_4_BYTE_ADDR_MODE_CMD            0xE9
 
+#define CHIP_RESET_ENABLE 0x66
+#define CHIP_RESET 0x99
+
 /* Quad Operations */
-#define ENTER_QUAD_CMD                       0x35
-#define EXIT_QUAD_CMD                        0xF5
+#define QSPICMD_ENTER_QUAD 0x35
+#define QSPICMD_EXIT_QUAD  0xf5
+#define QSPICMD_ENTER_WRITE 0x06
+#define QSPICMD_EXIT_WRITE 0x04
+
+#define QSPICMD_SETREG_STATUS  0x01
+#define QSPICMD_READREG_STATUS 0x05
+
+#define QSPICMD_SETREG_FUNCTION  0x42
+#define QSPICMD_READREG_FUNCTION 0x48
+
+#define QSPICMD_SETREG_READP_V  0x63
+#define QSPICMD_SETREG_READP_NV  0x65
+#define QSPICMD_READREG_READP_V 0x61
+#define QSPICMD_READREG_READEXT 0x81
+
 #ifdef __cplusplus
 }
 #endif

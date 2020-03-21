@@ -13,7 +13,7 @@
 **  Distribution: The file is distributed �as is,� without any warranty
 **                of any kind.
 **
-**  (c)Copyright Atollic AB.
+**  (c)Copyright Atoll${ProjName}.elfic AB.
 **  You may use this file as-is or modify it according to the needs of your
 **  project. This file may only be built (assembled or compiled and linked)
 **  using the Atollic TrueSTUDIO(R) product. The use of this file together
@@ -25,13 +25,15 @@
 /* Entry Point */
 ENTRY(Init)
 
+_Min_Heap_Size = 0x200 ;	/* required amount of heap  */
+_Min_Stack_Size = 0x400 ;	/* required amount of stack */
 /* Generate 2 segment for loader code and device info */
 PHDRS {Loader PT_LOAD ; SgInfo PT_LOAD ; }
 
 /* Specify the memory areas */
 MEMORY
 {
-  RAM (xrw)    : ORIGIN = 0x20000000,   LENGTH = 128K
+  RAM_D1    (xrw)    : ORIGIN = 0x20000000,   LENGTH = 128K
 }
 
 /* Define output sections */
@@ -49,12 +51,12 @@ SECTIONS
 
     . = ALIGN(4);
     _etext = .;        /* define a global symbols at end of code */
-  } >RAM :Loader
+  } >RAM_D1 :Loader
 
   .Dev_info :
   {
 	KEEP(Core/Src/devinfo.o ( .rodata ))
-  } :SgInfo
+  }>RAM_D1 :SgInfo
 
 
   /* Constant data goes into FLASH */
@@ -64,21 +66,31 @@ SECTIONS
     *(.rodata)         /* .rodata sections (constants, strings, etc.) */
     *(.rodata*)        /* .rodata* sections (constants, strings, etc.) */
     . = ALIGN(4);
-  } >RAM :Loader
+  } >RAM_D1 :Loader
 
-  .ARM.extab   : { *(.ARM.extab* .gnu.linkonce.armextab.*) } >RAM
+  .ARM.extab   : { *(.ARM.extab* .gnu.linkonce.armextab.*) } >RAM_D1
   .ARM : {
     __exidx_start = .;
     *(.ARM.exidx*)
     __exidx_end = .;
-  } >RAM :Loader
+  } >RAM_D1 :Loader
+
+  ._user_heap_stack :
+  {
+    . = ALIGN(8);
+    PROVIDE ( end = . );
+    PROVIDE ( _end = . );
+    . = . + _Min_Heap_Size;
+    . = . + _Min_Stack_Size;
+    . = ALIGN(8);
+  } >RAM_D1
 
   .preinit_array     :
   {
     PROVIDE_HIDDEN (__preinit_array_start = .);
     KEEP (*(.preinit_array*))
     PROVIDE_HIDDEN (__preinit_array_end = .);
-  } >RAM :Loader
+  } >RAM_D1 :Loader
   
   .init_array :
   {
@@ -86,7 +98,7 @@ SECTIONS
     KEEP (*(SORT(.init_array.*)))
     KEEP (*(.init_array*))
     PROVIDE_HIDDEN (__init_array_end = .);
-  } >RAM :Loader
+  } >RAM_D1 :Loader
   
   .fini_array :
   {
@@ -94,7 +106,7 @@ SECTIONS
     KEEP (*(SORT(.fini_array.*)))
     KEEP (*(.fini_array*))
     PROVIDE_HIDDEN (__fini_array_end = .);
-  } >RAM :Loader
+  } >RAM_D1 :Loader
 
   /* used by the startup to initialize data */
   _sidata = LOADADDR(.data);
@@ -109,7 +121,7 @@ SECTIONS
 
     . = ALIGN(4);
     _edata = .;        /* define a global symbol at data end */
-  } >RAM :Loader
+  } >RAM_D1 :Loader
 
   /* Uninitialized data section */
   . = ALIGN(4);
@@ -125,7 +137,7 @@ SECTIONS
     . = ALIGN(4);
     _ebss = .;         /* define a global symbol at bss end */
     __bss_end__ = _ebss;
-  } >RAM :Loader
+  } >RAM_D1 :Loader
 
   /* Remove information from the standard libraries */
   /DISCARD/ :
